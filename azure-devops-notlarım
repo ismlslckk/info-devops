@@ -1,0 +1,62 @@
+VSTS(Yeni ismi azure devops olmuştur.) : VSTS'de bulut kaynaklarına bağlı olan bazı özellikler mevcuttur ve bu özellikler TFS'de bulunmamaktadır.Örneğin:PowerBI ile entegrasyon sunar.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+CI(Continuous integration-sürekli entegrasyon): Sürekli entegrasyon (CI), geliştiricilerin kodu günde birkaç kez paylaşılan bir depoya entegre etmelerini gerektiren bir geliştirme uygulamasıdır. Her check-in otomatik olarak oluşturularak doğrulanır ve ekiplerin sorunları erken tespit etmesine izin verir.(push işlemi)
+
+Cd(Continuous delivery-sürekli teslimat): Sürekli Teslimat, CI'nin uzantısıdır: her takımın sistemdeki her değişikliğin serbest bırakılabileceğini garanti ettiği bir yaklaşımdır ve herhangi bir sürümü bir düğmeye basarak serbest bırakabiliriz.(publish işlemi)
+
+Cd(Continuous deployment-sürekli dağıtım):  Sürekli Teslimat ile benzerdir. Burada, geliştirici kodu onayladıktan sonra, manuel / insan müdahalesi olmadan üretime geçecektir.
+
+CI / CD Boru Hattı -  Omurga ve DevOps'un en önemli parçalarından biridir. Burada, kodlamadan dağıtıma ve üretime kadar sorunsuz bir boru hattı / iş akışı oluşturuyoruz.
+
+Team Foundation Server TFS , Git gibi bir SCM aracı olarak hizmet veren bir Microsoft ürünüdür. Ayrıca raporlama, proje yönetimi, otomatikleştirilmiş yapılar, test etme ve yayın yönetimi özellikleri gibi özelliklere de sahiptir. Tüm yaşam döngüsünü kapsar ve DevOps yeteneklerini sağlar. TFS, tüm platformlarda Visual Studio ve Eclipse dahil olmak üzere çok sayıda IDE ile kullanılabilir.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+JETKINS:Java ile geliştirilmiş bir entegrasyon aracıdır.Bir CI aracıdır.Git,tfs gibi sistemleri destekler.
+Jenkins’de Pipeline:Bir işin uygulanmasından sonra otomatik olarak diğer işlerin başlatılması sürecidir.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Kubernetes(k8s):Google tarafından GO dilinde geliştirilmiş Cloud Native Computing Foundation tarafından desteklenen mevcut konteyner haline getirilmiş uygulamalarınızı otomatik deploy etmek, sayılarını arttırıp azaltmak gibi işlemler ile birlikte yönetmenizi sağlayan bir Konteyner kümeleme (container cluster) aracıdır.Bulut teknolojilerinin kullanımının yaygınlaşması ile birlikte konteyner kavramı hayatımıza girdi ve önemli hale gelmeye başladı.Bundan üç yada dört sene önce sanal makine devrimini konuşuyorken artık sanal makinelerin üzerinde koşan kontainer devrimini konuşuyoruz.Azure kubernetes'i desteklemektedir.
+Kubernetes google tarafından yapıldı fakat cncf'e verildi ve tüm büyük şirketler cncf'i desteklemeye başladı.             (azure'u destekler.)
+ 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+CHEF:Sistem yönetimini kolaylaştırmayı hedefleyen, altyapılarınızı otomatize etme imkanı sağlayan, merkezi bir sistem tarafından yönetilme amacıyla yazılmış açık kaynaklı bir yazılımdır.
+	Chef ile Yapılabilecekler
+	Sistemleri kod yazarak yönetme imkanı sağlar.
+	“Search” özelliği ile sunucular içinde özelliğine göre arama yapar.
+	Ör: Hangi uygulamanın hangi sunucu üzerinde olduğu hakkında
+	bilgi verir.
+	Kütüphaneleri sayesinde mevcut uygulamalarla entegre şekilde çalışır.
+	Nginx, MySQL ...
+		Neden Chef?
+		Tekrar edilen işlemleri azaltır.
+		İşler otomatize edildiği için, harcanan süre azalır.
+		Ör: nginx kurulumu, rails sunucu kurulumu vb...
+		İstenilen sunucuların hepsinde, aynı işlemi tek bir kod’la yapmak mümkündür.
+		Ör: Sistem saatinin 1 saniye ileri alınması, sunucu güncelleştirmeleri,
+		önemli bir paket kurulumu vs ...
+			Neden Chef?
+			Geliştirici:
+
+			“Benim makinemde bu çalışıyordu.”
+			“Ruby on Rails’in x.y.z versiyonu lazım.”
+			“Yeri gelmişken; projenin yarına kadar deploy edilmesi gerekiyor.”
+			Sistem Yöneticisi
+
+			“Bu versiyonu desteklemiyoruz.”
+			“Projenin mimari yapısı bizim yapımızla uyuşmuyor.”         (azure'u destekler.)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Terraform : HashiCorp firması tarafından, güvenli ve verimli bir şekilde altyapı oluşturmak, değiştirmek ve iyileştirmek için geliştirilen Open Source bir tooldur.
+	Execution Planları
+	Aynı altyapıyı birden fazla ortamda oluşturabilmek ( development, staging, production vb. )
+	Multivendor desteği ( AWS, Azure, GCP, OpenStack,Wmware etc.) +76
+	Immutable Infrastructure
+	Resource Grafiği
+	Terraform ile altyapınızın görsel grafiğini oluşturabilirsiniz.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Azure CLI nedir?
+Azure CLI, Azure kaynaklarının yönetimi için kullanılan, Microsoft tarafından sunulan platformlar arası bir komut satırı aracıdır. macOS, Linux ve Windows ile kullanılabilir veya Azure Cloud Shell kullanılarak tarayıcıda da kullanılabilir.
+
+Azure CLI, sanal makineler ve diskler gibi Azure kaynaklarını komut satırından veya betiklerde yönetmenize yardımcı olur. Şimdi başlayalım ve Azure Sanal Makineler ile neler yapabileceğimizi görelim.
